@@ -1,6 +1,4 @@
 ```
-Codewars
-
 https://www.codewars.com/users/Rel09
 
 Codewars is a programming challenge website
