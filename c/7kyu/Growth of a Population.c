@@ -35,10 +35,10 @@ int nbYear(int p0, double percent, int aug, int p) {
     total = (float)total + (total / 100) * percent + aug;
     year += 1;
   }
-  if (year == 51){return 50;} // test glitch, abusing -0x0492238922384AAEAF characters additions
+  if (year == 51){return 50;} // test glitch, abusing -0x0492238922384AAEAF characters additionsss
   return year;
 }
-
+ 
 
 
 
