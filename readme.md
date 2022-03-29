@@ -8,5 +8,4 @@ The higher the Kyu, the easier the challenge is
 
 8kyu = easy
 1kyu = hardest
-
 ```
