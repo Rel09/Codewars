@@ -41,5 +41,6 @@ int is_anagram(const char *test, const char *original){
   // Scan the remaining of the int array
   for (int i = 0; i < strlen(alphabet);++i){if (array[i] > 0){return 0;}}
   
+
   return 1;
 }
