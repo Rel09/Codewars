@@ -5,6 +5,28 @@ For example
 [10, 14, 2, 23, 19] -->  42 (= 23 + 19)
 [99, 2, 2, 23, 19]  --> 122 (= 99 + 23)*/
 
+
+// -------------------SECOND VERSION----------------
+
+#include <stddef.h>
+
+long long largest_pair_sum (size_t length, const int numbers[length]){
+  long upper_num[2] = {numbers[0], NULL};
+  for (int i = 1; i < length; ++i){
+    if (numbers[i] >= upper_num[0]){
+      upper_num[1] = upper_num[0];
+      upper_num[0] = numbers[i];   
+    }
+    else if (numbers[i] > upper_num[1]){
+      upper_num[1] = numbers[i];
+    }
+  }
+  
+return upper_num[0] + upper_num[1];
+}
+
+
+// -------------------FIRST VERSION-----------------
 #include <stddef.h>
 #include <stdio.h>
 
