@@ -13,7 +13,7 @@ bool is_pangram(const char *str_in) {
   
   for (int i = 0; i < strlen(str_in); ++i){
     x = tolower(str_in[i]);
-    if (x - 'a' >= 0 && str_in[i] - 'a' < 26 && hash[x - 'a'] == 0){
+    if (x - 'a' >= 0 && x - 'a' < 26 && hash[x - 'a'] == 0){
       hash[x - 'a']++;
     }
   }
