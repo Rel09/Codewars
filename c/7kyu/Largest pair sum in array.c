@@ -11,7 +11,7 @@ For example
 #include <stddef.h>
 
 long long largest_pair_sum (size_t length, const int numbers[length]){
-  long upper_num[2] = {numbers[0], NULL};
+  long upper_num[2] = {numbers[0], -9999999999999};
   for (int i = 1; i < length; ++i){
     if (numbers[i] >= upper_num[0]){
       upper_num[1] = upper_num[0];
