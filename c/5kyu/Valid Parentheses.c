@@ -38,8 +38,8 @@ bool validParentheses(const char *str_in) {
     printf("Returning True\n");
     return true;}
   else if (count == 1){
-    return false;
     printf("Returning False\n");
+    return false;
   }
   
   printf("New String: %s\n", s);
